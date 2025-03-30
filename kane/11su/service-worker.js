@@ -5,8 +5,8 @@ const urlsToCache = [
   "./style.css",
   "./script.js",
   "./manifest.json",
-  "./apple-icon-192x192.png",
-  "./apple-icon-512x512.png",
+  "./kanea-192.png",
+  "./kanea-512.png",
 ];
 
 self.addEventListener("install", (event) => {
