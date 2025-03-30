@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "jua";
+    src: url('BMJUA_ttf.ttf');
+}
+
+#title{
+    font-family: "jua";
+}
+
+body { 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: "jua";
+}
+
+#intro {
+    /* 오른쪽에서 튀어나오게 */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out, opacity 4s ease-in-out;
+    /* width: 100%; */
+    /* height: 100vh; */
+    z-index: 99;
+}
+
+#intro > img{
+    height: 100vh;
+}
+
+#intro > h1 {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+#info {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* width: 850px; 캔버스 너비에 맞춤 */
+    font-size: 18px;
+}
+
+#info > div {
+    text-align: center;
+}
+
+canvas { 
+    display: block; 
+    background: #ffffff; 
+    /* border: 2px solid #000;
+    border-radius: 12px; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    z-index: 4; /* 캔버스 위로 배치 */
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 8s ease-in-out;
+}
+#overlay button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "jua";
+}
+#overlay > .container {
+    display: flex;
+    flex-direction: column;
+}
+#overlayMessage {
+    text-align: center;
+}
+
+#pageNotFound {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    z-index: 5; /* 캔버스 위로 배치 */
+    transition: transform 1s ease-out, opacity 8s ease-in-out;
+}
+
+#link {
+    color: white;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+#link:hover{
+    color:violet;
+}
+
+
+
+
+
+@keyframes shake {
+    0% { transform: translate(0, 0) scale(1); opacity: 1; }
+    20% { transform: translate(-5px, 3px) scale(1.02); opacity: 0.9; }
+    40% { transform: translate(4px, -6px) scale(0.98); opacity: 0.8; }
+    60% { transform: translate(-3px, 5px) scale(1.03); opacity: 0.7; }
+    80% { transform: translate(2px, -4px) scale(0.99); opacity: 0.6; }
+    100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+}
+
+.mte {    
+    animation: shake 0.2s infinite alternate;
+    filter: blur(1px); /* 살짝 흐리게 */
+}
+
+
+@keyframes scaleUp {
+    0% { transform: scale(1); }
+    100% { transform: scale(2); }
+}
+
+.target {
+    display: inline-block;
+    font-size: 24px;
+    padding: 20px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    animation: scaleUp 2s forwards;
+}

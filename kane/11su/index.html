@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+    <link rel="stylesheet" href="style.css">
+    <title>apple</title>
+</head>
+<body>
+    <div id="pageNotFound">
+        <h2 id="error">404 Page not found</h2>
+        <h4 id="link">To resolve the issue, click here.</h4>
+    </div>
+    <div id="intro">
+        <img src="images/intro.png" alt="">
+        <h1>링크를 클릭하셨군요?</h1>
+    </div>
+    <div id="container">
+        <div id="info">
+            <div id="timer">시간: 2:00</div>
+            <div id="score">0 수</div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="overlay">
+        <div class="container">
+            <h2 id="overlayMessage">11수 게임</h2>
+            <button id="startBtn">케인인님 한판해요</button>
+            <button id="copyGameUrl">URL 공유</button>
+            <button id="freeYoungdo">무료영도 보기</button>
+        </div>
+    </div>
+
+    <script src="./kanea.js" type="module"></script>
+    <script src="./freeYoungdo.js" type="module"></script>
+</body>
+</html>

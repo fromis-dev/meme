@@ -1,0 +1,22 @@
+{
+    "name": "11수 게임",
+    "short_name": "케인아 영양제 먹어라?",
+    "description": "뭉탱이로 있다가 유링게슝",
+    "start_url": ".",
+    "display": "fullscreen",
+    "background_color": "#f0f0f0",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "kanea-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "kanea-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
