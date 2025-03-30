@@ -1,12 +1,12 @@
 const CACHE_NAME = "apple-game-v1";
 const urlsToCache = [
   "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/manifest.json",
-  "/apple-icon-192x192.png",
-  "/apple-icon-512x512.png",
+  "./index.html",
+  "./style.css",
+  "./script.js",
+  "./manifest.json",
+  "./apple-icon-192x192.png",
+  "./apple-icon-512x512.png",
 ];
 
 self.addEventListener("install", (event) => {
