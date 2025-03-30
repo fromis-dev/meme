@@ -1,6 +1,6 @@
 const CACHE_NAME = "apple-game-v1";
 const urlsToCache = [
-  "/",
+  "./",
   "./index.html",
   "./style.css",
   "./script.js",
