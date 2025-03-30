@@ -1,4 +1,4 @@
-import { sounds } from "/modules/sounds.js";
+import { sounds } from "./modules/sounds.js";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
